@@ -29,15 +29,38 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 55px;
+    margin-bottom: 10px;
 }
 
 .input-tarefa {
+    color: #FFFFFF;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px;
+    background-color: #E3B1CF;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+.input-tarefa::placeholder {
+    color: #FFFFFF;
+}
+
+.data-hora {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.data-hora input {
   width: 100%;
   padding: 15px;
   background-color: #E3B1CF;
   border: 2px solid #FFFFFF;
   border-radius: 50px;
+  color: #FFFFFF;
+  font-size: 14px;
 }
-.input-tarefa::placeholder {
-    color: #FFFFFF;
+.data-hora input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
 }
