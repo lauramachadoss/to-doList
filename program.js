@@ -33,4 +33,10 @@ botaoAdicionar.addEventListener("click", function () {
     `;
 
     listaTarefas.appendChild(tarefa);
+
+    const botaoRemover = tarefa.querySelector(".botao-remover");
+
+    botaoRemover.addEventListener("click", function () {
+        tarefa.remove();
+    });
 })
