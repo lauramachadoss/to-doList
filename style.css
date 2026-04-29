@@ -69,6 +69,13 @@ body {
     filter: invert(1);
 }
 
+@media (max-width: 500px) {
+    .data-hora input {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
 .botao-adicionar {
     width: 100%;
     padding: 15px;
