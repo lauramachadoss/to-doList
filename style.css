@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-  min-height: 100vh;
-  background-color: #f1d6ed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    min-height: 100vh;
+    background-color: #f1d6ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 100%;
+    max-width: 900px;
+    background-color: #E3B1CF;
+    padding: 40px;
+    border-radius: 40px;
 }
