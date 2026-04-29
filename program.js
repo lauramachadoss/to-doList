@@ -39,4 +39,8 @@ botaoAdicionar.addEventListener("click", function () {
     botaoRemover.addEventListener("click", function () {
         tarefa.remove();
     });
+
+    inputTarefa.value = "";
+    inputData.value = "";
+    inputHora.value = "";
 })
