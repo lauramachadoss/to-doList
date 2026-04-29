@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <script src="script.js"></script>
     <div class="box">
-        <h1>To-do List</h1>
-        <input type="text" placeholder="">
+        <h1 class="titulo">To-do List</h1>
+        <input class="input-tarefa" type="text" placeholder="Nova tarefa..." id="inputTarefa">
         <div class="data-hora">
-            <input type="date" name="Data" id="">
-            <input type="time" name="Hora" id="">
+            <input type="date" name="Data" id="inputData">
+            <input type="time" name="Hora" id="inputHora">
         </div>
-        <button type="button">Adicionar</button>
-        <div class="lista-tarefas">
+        <button class="botao-adicionar" type="button" id="botaoAdicionar">Adicionar</button>
+        <div class="lista-tarefas" id="listaTarefas">
+            <h3 class="titulo-tarefas">Tasks :</h3>
             <div class="tarefa">
                 <input type="checkbox">
 
