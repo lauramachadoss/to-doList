@@ -107,6 +107,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .info-tarefa p {
     color: #FFFFFF;
     font-size: 16px;
@@ -116,9 +117,23 @@ body {
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
-        margin-bottom: 15px;
+    margin-bottom: 15px;
 }
+
 .info-tarefa span {
     color: #FFFFFF;
     font-size: 14px;
+}
+
+.tarefa input[type="checkbox"] {
+    appearance: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+}
+
+.tarefa input[type="checkbox"]:checked {
+    background-color: #FFFFFF;
 }
