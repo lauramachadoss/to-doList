@@ -13,4 +13,24 @@ botaoAdicionar.addEventListener("click", function () {
         alert("Por favor, insira uma tarefa!");
         return;
     }
+    const tarefa = document.createElement("div");
+    tarefa.classList.add("tarefa");
+
+    let dataHora = "Sem data";
+    if (data !== "" && hora !== "") {
+        dataHora = `${data} - ${hora}`;
+    }
+
+    tarefa.innerHTML = `
+        <input type="checkbox">
+
+        <div class="info-tarefa">
+            <p>${texto}</p>
+            <span>${data} - ${hora}</span>
+        </div>
+
+        <button class="botao-remover" type="button">X</button>
+    `;
+
+    listaTarefas.appendChild(tarefa);
 })
