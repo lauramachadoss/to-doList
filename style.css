@@ -147,3 +147,29 @@ body {
 .tarefa input[type="checkbox"]:checked {
     background-color: #FFFFFF;
 }
+
+.botao-remover {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tarefa {
+    position: relative;
+}
+
+.botao-remover {
+    margin-left: auto;
+}
+
+.tarefa input[type="checkbox"]:checked+.info-tarefa p {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.tarefa input[type="checkbox"]:checked+.info-tarefa span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
